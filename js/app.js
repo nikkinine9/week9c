@@ -24,37 +24,37 @@ var tweets = [{
 
     },
     {
-        tweet: "Always in our hearts",
+        tweet: "Always in our hearts.",
         username: "Anne",
         age: 60,
         created_at: "07-28-2014"
     },
     {
-        tweet: "Can corona spread through farts",
+        tweet: "Can corona spread through farts?",
         username: "Logan",
         age: 20,
         created_at: "12-16-2019"
     },
     {
-        tweet: "Who wants a java",
-        username: "Ashley",
-        age: 26,
+        tweet: "Who wants a java?",
+        username: "Pamela",
+        age: 16,
         created_at: "07-28-2014"
     },
     {
-        tweet: "Just set up my twitter",
+        tweet: "Just set up my twitter!",
         username: "John",
         age: 34,
         created_at: "03-15-2020"
     },
     {
-        tweet: "Are you ready to celebrate",
+        tweet: "Are you ready to celebrate.",
         username: "Donovan",
-        age: 50,
+        age: 15,
         created_at: "05-05-2006"
     },
     {
-        tweet: "Turtles are not inside their shells, they are their shells",
+        tweet: "Turtles are not inside their shells, they are their shells.",
         username: "Nadya",
         age: 24,
         created_at: "12-14-2009"
@@ -85,3 +85,9 @@ for (var index = 0; index < tweets.length; index++) {
     console.log(tweets[index].created_at);
     console.log("--------------------");
 }
+
+function ageChecker(tweet) {
+    return tweet.age >= 18;
+}
+var overEighteenTweets = tweets.filter(ageChecker);
+console.log(overEighteenTweets);
